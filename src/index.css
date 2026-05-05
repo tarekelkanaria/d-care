@@ -5,6 +5,9 @@
   --font-manrope: Manrope, sans-serif;
   --font-inter: Inter, sans-serif;
   --color-logo: #2563eb;
+  --color-navlist: #64748b;
+  --color-header: #001849;
+  --bg-bob: #dae1ff;
 }
 
 @utility container {
