@@ -5,6 +5,16 @@
   --font-manrope: Manrope, sans-serif;
   --font-inter: Inter, sans-serif;
   --color-logo: #2563eb;
+  --color-placeholder: #94a3b8;
+  --color-placeholdtwo: #6b7280;
+  --color-secondary: #f8fafc;
+  --color-icon: #64748b;
+  --color-line: #e2e8f0;
+  --color-header: #001849;
+  --color-purp: #f2f3ff;
+  --color-dark-black: #191b24;
+  --bg-bob: #dae1ff;
+  --shadow-avatar: 0px 1px 2px 0px #0000000d;
 }
 
 @utility container {
