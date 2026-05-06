@@ -1,10 +1,12 @@
 import image from "../../src/assets/Background+Border+Shadow.png";
 import Navbar from "../components/Home/Navbar/Navbar";
+import OurStory from "../components/OurStory/OurStory";
 export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="container mx-auto flex flex-col lg:flex-row items-center justify-between my-10 gap-10">
+      <main>
+      <section className="container mx-auto flex flex-col lg:flex-row items-center justify-between my-10 gap-10">
         <div className="w-full lg:w-1/2">
           <p className="text-header bg-[#DAE1FF] w-fit px-4 py-1 rounded-2xl text-center">
             COMPASSIONATE CARE
@@ -34,6 +36,8 @@ export default function Home() {
         <div className="w-full lg:w-1/2 flex justify-center">
           <img src={image} alt="" className="w-full max-w-md drop-shadow-lg" />
         </div>
+      </section>
+      <OurStory />
       </main>
     </>
   );
