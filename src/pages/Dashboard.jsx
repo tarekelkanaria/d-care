@@ -1,5 +1,5 @@
-import Navbar from "../components/Dash/Navbar";
+import Dash from "../components/Dash/Dash";
 
 export default function Dashboard() {
-  return <Navbar />;
+  return <Dash />;
 }

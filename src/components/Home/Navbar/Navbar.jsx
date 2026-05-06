@@ -8,14 +8,11 @@ export default function Navbar() {
 
   return (
     <nav className="relative container mx-auto flex items-center justify-between py-5 px-4 shadow">
-
-      
       <h1 className="text-logo font-extrabold text-xl sm:text-2xl cursor-pointer">
         D-Care
       </h1>
 
-     
-      <ul className="hidden md:flex gap-6 text-navlist">
+      <ul className="hidden md:flex gap-6 text-icon">
         <li className="cursor-pointer hover:text-logo">Services</li>
         <li className="cursor-pointer hover:text-logo">Your Story</li>
         <li className="cursor-pointer hover:text-logo">Testimonials</li>
@@ -23,8 +20,6 @@ export default function Navbar() {
 
       {/* Icons */}
       <div className="flex items-center gap-5">
-        
-        
         <button className="md:hidden" onClick={() => setOpen(!open)}>
           <GoListUnordered size={25} />
         </button>
@@ -33,7 +28,6 @@ export default function Navbar() {
         <LuCircleUserRound size={22} className="cursor-pointer" />
       </div>
 
-      
       {open && (
         <ul className="absolute top-16 left-0 w-full bg-white shadow-md flex flex-col items-center gap-4 py-5 md:hidden">
           <li className="cursor-pointer hover:text-logo">Services</li>
@@ -41,7 +35,6 @@ export default function Navbar() {
           <li className="cursor-pointer hover:text-logo">Testimonials</li>
         </ul>
       )}
-
     </nav>
   );
 }

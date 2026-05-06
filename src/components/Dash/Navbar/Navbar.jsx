@@ -3,7 +3,7 @@ import {
   IoMdNotificationsOutline,
   IoMdHelpCircleOutline,
 } from "react-icons/io";
-import AdminAvatar from "../../assets/admin-avatar.jpg";
+import AdminAvatar from "../../../assets/admin-avatar.jpg";
 
 export default function Navbar() {
   return (
@@ -11,7 +11,7 @@ export default function Navbar() {
       <nav className="container flex justify-between items-center">
         <div className="flex justify-between items-center">
           <h1 className="font-inter font-extrabold text-2xl text-logo tracking-wide">
-            d-care
+            D-Care
           </h1>
           <div className="hidden sm:flex items-center bg-secondary rounded-lg my-3 py-2 px-4 ml-10">
             <MdOutlinePersonSearch className="text-2xl text-placeholder" />
