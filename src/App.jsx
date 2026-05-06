@@ -22,6 +22,7 @@ const routes = createBrowserRouter([
         path: "*",
         element: <NotFound />,
       },
+
     ],
   },
 ]);
