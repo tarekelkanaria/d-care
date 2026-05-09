@@ -1,6 +1,6 @@
-import OfficeImg from "../../assets/office.png";
-import Support from "../../assets/s-icon.png";
-import Verify from "../../assets/v-icon.png";
+import OfficeImg from "../../../assets/office.png";
+import Support from "../../../assets/s-icon.png";
+import Verify from "../../../assets/v-icon.png";
 export default function OurStory() {
   return (
     <section id="story" className="flex bg-[#F2F3FF] py-16 px-10 items-center">
