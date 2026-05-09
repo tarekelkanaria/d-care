@@ -13,7 +13,12 @@
   --color-header: #001849;
   --color-purp: #f2f3ff;
   --color-dark-black: #191b24;
+  --color-body-secondary: #faf8ff;
+  --color-title: #0f172a;
+  --color-body: #475569;
+  --color-link: #0050cb;
   --bg-bob: #dae1ff;
+
   --shadow-avatar: 0px 1px 2px 0px #0000000d;
 }
 
@@ -24,6 +29,6 @@
 
 @layer components {
   body {
-    @apply font-inter bg-white;
+    @apply font-inter bg-white scroll-smooth;
   }
 }

@@ -1,18 +1,18 @@
-import officeimg from "../../../public/office.png";
-import supporti from "../../../public/s-icon.png";
-import verifyi from "../../../public/v-icon.png";
+import OfficeImg from "../../assets/office.png";
+import Support from "../../assets/s-icon.png";
+import Verify from "../../assets/v-icon.png";
 export default function OurStory() {
   return (
-    <div className="main-our-story flex bg-[#F2F3FF] py-16 px-10 min-h-screen items-center">
-      <div className="os grid grid-flow-col items-center gap-12 max-w-7xl mx-auto">
-        <div className="os-img grid justify-items-start">
-          <img src={officeimg}></img>
+    <section id="story" className="flex bg-[#F2F3FF] py-16 px-10 items-center">
+      <div className="flex lg:justify-between items-center max-lg:flex-col max-w-7xl">
+        <div className="lg:max-w-1/2">
+          <img src={OfficeImg} className="w-full"></img>
         </div>
-        <div className="os-p space-y-6">
-          <div className="os-h text-4xl font-bold text-[#0F172A] leading-tight">
-            <h1>Our Story: Dedicated to Your Dental Wellness</h1>
+        <article className="space-y-6 lg:max-w-2/5">
+          <div className=" text-4xl font-bold text-[#0F172A] leading-tight">
+            <h2>Our Story: Dedicated to Your Dental Wellness</h2>
           </div>
-          <div className="osp1 text-[#475569] text-lg leading-relaxed">
+          <div className="text-body text-lg leading-relaxed">
             <p>
               Founded on the principles of clinical excellence and patient-first
               care, d-care has been serving our community for over 15 years. We
@@ -21,7 +21,7 @@ export default function OurStory() {
               experience.
             </p>
           </div>
-          <div className="os-p2 text-[#475569] text-lg leading-relaxed">
+          <div className="text-body text-lg leading-relaxed">
             <p>
               Our team of highly experienced doctors utilizes the latest dental
               innovations while maintaining a gentle, compassionate touch. We've
@@ -30,27 +30,27 @@ export default function OurStory() {
             </p>
           </div>
 
-          <div className="os-icons flex gap-12 pt-4">
-            <div className="icon1 flex">
-              <img className="w-8 h-8 mb-2" src={verifyi}></img>
-              <div>
+          <div className="flex gap-12 pt-4">
+            <article className="flex">
+              <img className="w-8 h-8 mb-2" src={Verify}></img>
+              <div className="ml-5">
                 <h3 className="font-bold text-[#0F172A] ">
                   Clinical Excellence
                 </h3>
-                <p className="text-[#475569] text-sm">
-                  Top-tier medical standards
-                </p>
+                <p className="text-body text-sm">Top-tier medical standards</p>
               </div>
-            </div>
+            </article>
 
-            <div className="icon2">
-              <img className="w-8 h-8 mb-2" src={supporti}></img>
-              <h3 className="font-bold text-[#0F172A]">Patient Comfort</h3>
-              <p className="text-[#475569] text-sm">Anxiety-free environment</p>
-            </div>
+            <article className="flex">
+              <img className="w-8 h-8 mb-2" src={Support}></img>
+              <div className="ml-5">
+                <h3 className="font-bold text-[#0F172A]">Patient Comfort</h3>
+                <p className="text-body text-sm">Anxiety-free environment</p>
+              </div>
+            </article>
           </div>
-        </div>
+        </article>
       </div>
-    </div>
+    </section>
   );
 }
