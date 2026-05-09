@@ -13,7 +13,7 @@ export default function Hero() {
           <span className="text-logo"> D-Care</span> Expertise.
         </h1>
 
-        <p className="text-[#475569] font-inter text-sm sm:text-base">
+        <p className="text-body font-inter text-sm sm:text-base">
           Our dedicated team of professionals provides personalized dental
           solutions in a relaxing environment.
         </p>
