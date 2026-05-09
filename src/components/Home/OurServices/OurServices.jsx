@@ -3,6 +3,7 @@ import Image2 from "../../../assets/Background (2).png";
 import Image3 from "../../../assets/Background (1).png";
 import Image4 from "../../../assets/Background.png";
 import ServiceItem from "../../UI/ServiceItem/ServiceItem";
+
 function OurServices() {
   return (
     <section id="services" className="bg-body-secondary py-10">
@@ -17,10 +18,26 @@ function OurServices() {
       </p>
 
       <div className="flex max-lg:flex-col max-lg:space-y-3 lg:justify-around items-center">
-        <ServiceItem Image={Image1} />
-        <ServiceItem Image={Image2} />
-        <ServiceItem Image={Image3} />
-        <ServiceItem Image={Image4} />
+        <ServiceItem
+          Image={Image1}
+          title="Preventive Care"
+          text="Professional cleanings and exams to keep your natural teeth healthy for a lifetime."
+        />
+        <ServiceItem
+          Image={Image2}
+          title="Restorative"
+          text="High-quality fillings, crowns, and bridges designed to look and feel like natural teeth."
+        />
+        <ServiceItem
+          Image={Image3}
+          title="Cosmetic"
+          text="Whitening, veneers, and bonding to help you achieve the confident smile you've always wanted."
+        />
+        <ServiceItem
+          Image={Image4}
+          title="Orthodontics"
+          text="Straighten your teeth with modern solutions including Invisalign and traditional braces."
+        />
       </div>
     </section>
   );
