@@ -2,7 +2,7 @@ import Image1 from "../../assets/Background (3).png";
 import Image2 from "../../assets/Background (2).png";
 import Image3 from "../../assets/Background (1).png";
 import Image4 from "../../assets/Background.png";
-import ServiceItem from "../UI/ServiceItem/ServiceItem";
+import ServiceItem from "../../UI/ServiceItem/ServiceItem";
 function OurServices() {
   return (
     <section id="services" className="bg-body-secondary py-10">
