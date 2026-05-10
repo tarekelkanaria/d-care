@@ -1,11 +1,12 @@
 import { FaCalendarAlt } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
 import StatsList from "./StatsList";
+
 export default function Dash() {
   return (
     <main className="container bg-purp p-10">
       <section className=" mb-8">
-        <article className="flex justify-between items-center mb-8">
+        <article className="flex max-md:flex-col max-md:space-y-3 md:justify-between md:items-center mb-8">
           <div>
             <h2 className="font-manrope font-bold text-4xl text-dark-black mb-2">
               Dashboard Overview
