@@ -1,6 +1,8 @@
 import image from "../../src/assets/Background+Border+Shadow.png";
 import Navbar from "../components/Home/Navbar/Navbar";
 import OurStory from "../components/OurStory/OurStory";
+import StartYJ from "../components/Start Your Journey/syj";
+
 export default function Home() {
   return (
     <>
@@ -38,6 +40,7 @@ export default function Home() {
         </div>
       </section>
       <OurStory />
+      <StartYJ />
       </main>
     </>
   );
