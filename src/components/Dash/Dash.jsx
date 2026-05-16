@@ -1,30 +1,20 @@
-import { FaCalendarAlt } from "react-icons/fa";
-import { IoIosArrowDown } from "react-icons/io";
 import StatsList from "./StatsList";
+import AppointmentChart from "./AppointmentChart";
+import Appointment from "./Appointment";
+import TitleBar from "./TitleBar";
+import StaffAvailability from "./StaffAvailability";
 
 export default function Dash() {
   return (
     <main className="container bg-purp p-10">
-      <section className=" mb-8">
-        <article className="flex max-md:flex-col max-md:space-y-3 md:justify-between md:items-center mb-8">
-          <div>
-            <h2 className="font-manrope font-bold text-4xl text-dark-black mb-2">
-              Dashboard Overview
-            </h2>
-            <p className="font-inter font-normal text-body">
-              Track real-time clinic metrics and manage daily operations.
-            </p>
-          </div>
-          <div className="flex items-center justify-around bg-white border border-line shadow-avatar py-2 px-4 rounded-lg">
-            <FaCalendarAlt className="text-logo text-2xl" />
-            <p className="ml-3 text-sm font-inter font-semibold text-dark-black">
-              Oct 24, 2023 - Oct 30, 2023
-            </p>
-            <IoIosArrowDown className="text-2xl text-placeholder ml-3" />
-          </div>
-        </article>
-        <StatsList />
-      </section>
+      <TitleBar />
+      <StatsList />
+      <div className="flex max-lg:flex-col max-lg:space-y-4 lg:space-x-2 lg:justify-between">
+        <Appointment>
+          <AppointmentChart />
+        </Appointment>
+        <StaffAvailability />
+      </div>
     </main>
   );
 }
