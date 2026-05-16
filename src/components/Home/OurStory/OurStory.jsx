@@ -3,7 +3,10 @@ import Support from "../../../assets/s-icon.png";
 import Verify from "../../../assets/v-icon.png";
 export default function OurStory() {
   return (
-    <section id="story" className="flex bg-[#F2F3FF] py-16 px-10 items-center">
+    <section
+      id="story"
+      className="flex bg-[#F2F3FF] py-16 px-2 sm:px-10 items-center"
+    >
       <div className="flex lg:justify-between items-center max-lg:flex-col max-w-7xl">
         <div className="lg:max-w-1/2">
           <img src={OfficeImg} className="w-full"></img>
@@ -30,10 +33,10 @@ export default function OurStory() {
             </p>
           </div>
 
-          <div className="flex gap-12 pt-4">
+          <div className="flex space-x-2 pt-4">
             <article className="flex">
-              <img className="w-8 h-8 mb-2" src={Verify}></img>
-              <div className="ml-5">
+              <img className="w-4 h-4 sm:w-8 sm:h-8 mb-2" src={Verify}></img>
+              <div className="ml-2 sm:ml-5">
                 <h3 className="font-bold text-[#0F172A] ">
                   Clinical Excellence
                 </h3>
@@ -42,8 +45,8 @@ export default function OurStory() {
             </article>
 
             <article className="flex">
-              <img className="w-8 h-8 mb-2" src={Support}></img>
-              <div className="ml-5">
+              <img className="w-4 h-4 sm:w-8 sm:h-8 mb-2" src={Support}></img>
+              <div className="ml-2 sm:ml-5">
                 <h3 className="font-bold text-[#0F172A]">Patient Comfort</h3>
                 <p className="text-body text-sm">Anxiety-free environment</p>
               </div>
