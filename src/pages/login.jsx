@@ -179,19 +179,6 @@ export default function Login() {
             </button>
           </div>
         </div>
-
-        {/* روابط الفوتر السفلية */}
-        <div className="absolute bottom-8 flex gap-6 text-[12px] text-slate-400 font-medium z-10">
-          <a href="#" className="hover:text-slate-600 transition-colors">
-            Privacy Policy
-          </a>
-          <a href="#" className="hover:text-slate-600 transition-colors">
-            Terms of Service
-          </a>
-          <a href="#" className="hover:text-slate-600 transition-colors">
-            Support
-          </a>
-        </div>
       </div>
     </div>
   );
