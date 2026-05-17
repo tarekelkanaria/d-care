@@ -9,6 +9,7 @@
   --color-placeholder: #94a3b8;
   --color-placeholdtwo: #6b7280;
   --color-secondary: #f8fafc;
+  --color-secondary-80: #f8fafc80;
   --color-icon: #64748b;
   --color-line: #e2e8f0;
   --color-header: #001849;
@@ -25,6 +26,9 @@
   --color-activebg: #f0fdf4;
   --color-inactivebg: #f1f5f9;
   --color-light-link: #0050cb4d;
+  --color-badge: #f59e0b;
+  --color-highlight: #6ff7ee;
+  --color-highlight-text: #00716b;
 
   --color-cta: #0066ff;
   --bg-bob: #dae1ff;

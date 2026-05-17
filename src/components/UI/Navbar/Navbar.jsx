@@ -48,7 +48,7 @@ export default function Navbar() {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-logo">
+                <a href="#testimonials" className="hover:text-logo">
                   Testimonials
                 </a>
               </li>
