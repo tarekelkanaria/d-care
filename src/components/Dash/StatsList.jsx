@@ -6,7 +6,7 @@ import { FaMoneyBills } from "react-icons/fa6";
 
 export default function StatsList() {
   return (
-    <section className="flex max-md:flex-col max-md:space-y-2  md:justify-around md:items-center">
+    <section className="flex max-md:flex-col max-md:space-y-2  md:justify-between md:items-center mb-8">
       <StatsItem
         Icon={<LuCalendarCheck className="text-2xl text-link " />}
         title="42"
