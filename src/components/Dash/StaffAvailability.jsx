@@ -57,7 +57,7 @@ export default function StaffAvailability() {
                 <img
                   src={doctor.avatar}
                   alt={`Avatar for doctor ${doctor.drName}`}
-                  className="w-8 h-8 rounded-full"
+                  className={`w-8 h-8 rounded-full ${doctor.isActive ? "" : "opacity-60"}`}
                 />
                 <span
                   className={`w-3 h-3 absolute right-0.5 bottom-0.5 rounded-full ${doctor.isActive ? "bg-res" : "bg-inactive"}`}
