@@ -10,7 +10,7 @@ export default function LeftPart() {
         className="absolute right-0 top-1/4 w-[76%] max-w-[520px] opacity-[0.06]"
       />
 
-      <div className="relative z-10 max-w-[470px]">
+      <div className="relative z-10 max-w-117.5">
         <div className="flex items-center gap-2 text-logo">
           <RiShieldCheckLine className="text-3xl" />
           <h1 className="text-3xl font-bold tracking-tight">D-care</h1>
