@@ -4,24 +4,57 @@
 @theme {
   --font-manrope: Manrope, sans-serif;
   --font-inter: Inter, sans-serif;
+
   --color-logo: #2563eb;
   --color-placeholder: #94a3b8;
   --color-placeholdtwo: #6b7280;
   --color-secondary: #f8fafc;
+  --color-secondary-80: #f8fafc80;
   --color-icon: #64748b;
   --color-line: #e2e8f0;
   --color-header: #001849;
+  --color-purp: #f2f3ff;
+  --color-dark-black: #191b24;
+  --color-body-secondary: #faf8ff;
+  --color-title: #0f172a;
+  --color-body: #475569;
+  --color-link: #0050cb;
+  --color-highlight: #eff6ff;
+  --color-res: #10b981;
+  --color-alert-danger: #ef4444;
+  --color-inactive: #cbd5e1;
+  --color-activebg: #f0fdf4;
+  --color-inactivebg: #f1f5f9;
+  --color-light-link: #0050cb4d;
+  --color-badge: #f59e0b;
+  --color-highlight: #6ff7ee;
+  --color-highlight-text: #00716b;
+
+  --color-cta: #0066ff;
   --bg-bob: #dae1ff;
+
   --shadow-avatar: 0px 1px 2px 0px #0000000d;
 }
 
 @utility container {
   margin-inline: auto;
-  padding-inline: 2rem;
+  padding-inline: 1rem;
 }
 
 @layer components {
   body {
-    @apply font-inter bg-white;
+    @apply font-inter bg-white scroll-smooth;
+  }
+  .dash-wrapper {
+    @apply bg-white border border-line rounded-xl p-4 shadow-avatar;
+  }
+  .sub-title {
+    @apply font-manrope font-semibold text-xl tracking-normal text-dark-black;
+  }
+  .main-btn {
+    @apply py-1.5 px-3 font-inter font-normal text-xs rounded-lg tracking-normal cursor-pointer;
+  }
+  .thead-cell {
+    @apply font-inter font-medium text-xs uppercase text-body p-3;
   }
 }
