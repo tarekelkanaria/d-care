@@ -20,9 +20,9 @@ export default function Login() {
           D-care
         </div>
 
-        <div className="max-w-lg mt-10 z-10">
+        <div className="max-w-md mt-10 z-10">
           <h1 className="text-[40px] font-bold text-#0f172a leading-[1.15] mb-5 tracking-tight font-manrope">
-            Precision Healthcare for a Brighter Smile.
+            Precision Healthcare for a <br /> Brighter Smile.
           </h1>
           <p className="text-slate-500 text-[15px] leading-relaxed mb-10">
             Access your clinical records, manage appointments, and connect with
@@ -48,6 +48,7 @@ export default function Login() {
           </div>
         </div>
       </div>
+
       <div className="w-full lg:w-1/2 flex flex-col justify-center items-center relative p-6">
         <div className="w-full max-w-420px bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 p-10 z-10">
           {/* Header */}
