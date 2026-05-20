@@ -19,7 +19,7 @@
   --color-title: #0f172a;
   --color-body: #475569;
   --color-link: #0050cb;
-  --color-highlight: #eff6ff;
+  --color-high: #eff6ff;
   --color-res: #10b981;
   --color-alert-danger: #ef4444;
   --color-inactive: #cbd5e1;
@@ -29,6 +29,7 @@
   --color-badge: #f59e0b;
   --color-highlight: #6ff7ee;
   --color-highlight-text: #00716b;
+  --color-logo-text: #1d4ed8;
 
   --color-cta: #0066ff;
   --bg-bob: #dae1ff;
