@@ -3,7 +3,9 @@ import TitleWithSubTitle from "../UI/TitleWithSubTitle/TitleWithSubTitle";
 import { MdOutlineDashboard } from "react-icons/md";
 import { FaRegCalendar } from "react-icons/fa";
 import { MdPersonSearch, MdBarChart, MdGroups2 } from "react-icons/md";
+import { GoSidebarCollapse } from "react-icons/go";
 import { NavLink } from "react-router";
+import { useState } from "react";
 
 const links = [
   {
@@ -50,30 +52,41 @@ const links = [
   },
 ];
 export default function Sidebar() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   return (
-    <aside className="bg-white hidden lg:block lg:w-80 min-h-screen p-2">
-      <div className="flex justify-center items-center space-x-2 mb-10">
-        <div className="bg-logo p-2.5 rounded-lg">
-          <BsFillBagPlusFill className="text-xl text-white" />
+    <aside
+      className={`bg-white min-h-screen p-2 ${isSidebarOpen ? "max-lg:absolute max-lg:left-0 max-lg:top-0 max-lg:w-full max-lg:z-10 lg:w-80" : ""}`}
+    >
+      <button
+        className="mx-auto p-2"
+        onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+      >
+        <GoSidebarCollapse className="text-logo text-2xl cursor-pointer" />
+      </button>
+      <div className={`${isSidebarOpen ? "block" : "hidden"}`}>
+        <div className="flex justify-center items-center space-x-2 mb-10">
+          <div className="bg-logo p-2.5 rounded-lg">
+            <BsFillBagPlusFill className="text-xl text-white" />
+          </div>
+          <TitleWithSubTitle
+            subTitle="Admin dashboard"
+            titleDescription="Dentist booking appointments"
+          />
         </div>
-        <TitleWithSubTitle
-          subTitle="Admin dashboard"
-          titleDescription="Dentist booking appointments"
-        />
+        <nav className="px-1">
+          {links.map((link, index) => (
+            <NavLink
+              to={link.path}
+              key={`${link.text}${index}`}
+              className="group"
+            >
+              <p className="flex mb-2 py-4 px-2 items-center font-inter font-medium text-sm text-body capitalize tracking-tight group-hover:text-logo-text group-hover:bg-high transition-colors duration-300 rounded-lg">
+                {link.Icon} {link.text}
+              </p>
+            </NavLink>
+          ))}
+        </nav>
       </div>
-      <nav className="px-1">
-        {links.map((link, index) => (
-          <NavLink
-            to={link.path}
-            key={`${link.text}${index}`}
-            className="group"
-          >
-            <p className="flex mb-2 py-4 px-2 items-center font-inter font-medium text-sm text-body capitalize tracking-tight group-hover:text-logo-text group-hover:bg-high transition-colors duration-300 rounded-lg">
-              {link.Icon} {link.text}
-            </p>
-          </NavLink>
-        ))}
-      </nav>
     </aside>
   );
 }
