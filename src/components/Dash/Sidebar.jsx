@@ -4,6 +4,7 @@ import { MdOutlineDashboard } from "react-icons/md";
 import { FaRegCalendar } from "react-icons/fa";
 import { MdPersonSearch, MdBarChart, MdGroups2 } from "react-icons/md";
 import { GoSidebarCollapse } from "react-icons/go";
+import { RiLogoutBoxRLine } from "react-icons/ri";
 import { NavLink } from "react-router";
 import { useState } from "react";
 
@@ -49,7 +50,7 @@ export default function Sidebar() {
       <button className="p-2" onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
         <GoSidebarCollapse className="text-logo text-3xl cursor-pointer" />
       </button>
-      <div className={`${isSidebarOpen ? "block" : "hidden"}`}>
+      <div className={`${isSidebarOpen ? "block" : "hidden"} py-2`}>
         <div className="flex justify-center items-center space-x-2 mb-10">
           <div className="bg-logo p-2.5 rounded-lg">
             <BsFillBagPlusFill className="text-xl text-white" />
@@ -80,6 +81,9 @@ export default function Sidebar() {
             </NavLink>
           ))}
         </nav>
+        <button className="text-danger font-inter font-medium text-sm tracking-normal mt-24 flex items-center w-full px-3 py-4 cursor-pointer hover:bg-red-200 rounded-lg">
+          <RiLogoutBoxRLine className="text-danger text-3xl mr-2" /> Logout
+        </button>
       </div>
     </aside>
   );
