@@ -1,10 +1,10 @@
 import RightPart from "../components/Login/RightPart";
 import Choose from "../components/Login/Choose";
 import LeftPart from "../components/Login/LeftPart";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 export default function Login() {
   const navigate = useNavigate();
-  function goToDashboard() {
+  function goToRegister() {
     navigate("/Regester");
   }
   return (
@@ -29,7 +29,7 @@ export default function Login() {
             Don't have an account?
             <button
               type="button"
-              onClick={goToDashboard}
+              onClick={goToRegister}
               className="text-[#0052cc] hover:underline font-semibold ml-1"
             >
               Register with your clinic

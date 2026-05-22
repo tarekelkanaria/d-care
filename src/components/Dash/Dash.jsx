@@ -7,7 +7,7 @@ import LiveAppointment from "./LiveAppointment";
 
 export default function Dash() {
   return (
-    <main className="container bg-purp p-10">
+    <main className="bg-purp p-5 overflow-x-auto lg:container">
       <TitleBar />
       <StatsList />
       <section className="flex max-lg:flex-col max-lg:space-y-4 lg:space-x-2 lg:justify-between mb-5">

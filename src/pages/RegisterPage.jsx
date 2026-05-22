@@ -1,9 +1,15 @@
 // import React from 'react'
-import Scrol from '../components/Regester/Scrol'
-import Right from '../components/Regester/Right'
-import Left from '../components/Regester/Left'
+import Scrol from '../components/Register/Scrol'
+import Right from '../components/Register/Right'
+import Left from '../components/Register/Left'
+import {useNavigate} from 'react-router'
 export default function RegesterPage() {
+const navigate = useNavigate()
+function gotoLogin() {
+  navigate("/login")
+}
   return (
+    <>
      <div className="min-h-screen flex bg-gray-50 font-sans text-gray-800">
           <Left />
           {/* chosee */}
@@ -18,10 +24,20 @@ export default function RegesterPage() {
               <Scrol/>
     
               <Right />
-    
               
+    <div className="mt-8 text-center text-[12px] text-slate-500">
+            Go to Login
+            <button
+              type="button"
+              onClick={gotoLogin}
+              className="text-[#0052cc] hover:underline font-semibold ml-1"
+            >
+              Login with your clinic
+            </button>
+              </div>
             </div>
           </div>
         </div>
+    </>
   )
 }

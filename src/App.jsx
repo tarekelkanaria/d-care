@@ -2,11 +2,16 @@ import "./App.css";
 import Home from "./pages/Home";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Layout from "./components/Layout/Layout";
-import Dashboard from "./pages/Dashboard";
+import Dashboard from "./pages/Dashboard/Dashboard";
+import Dash from "./components/Dash/Dash";
+import Schedule from "./pages/Dashboard/Schedule";
+import Patients from "./pages/Dashboard/Patients";
+import Analytics from "./pages/Dashboard/Analytics";
+import Staff from "./pages/Dashboard/Staff";
+import Settings from "./pages/Dashboard/Settings";
 import NotFound from "./components/NotFound/NotFound";
 import LoginPage from "./pages/LoginPage";
-import RegesterPage from "./pages/RegesterPage";
-
+import RegisterPage from "./pages/RegisterPage";
 const routes = createBrowserRouter([
   {
     path: "/",
@@ -19,6 +24,32 @@ const routes = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard />,
+        children: [
+          {
+            path: "/dashboard",
+            element: <Dash />,
+          },
+          {
+            path: "schedule",
+            element: <Schedule />,
+          },
+          {
+            path: "patients",
+            element: <Patients />,
+          },
+          {
+            path: "analytics",
+            element: <Analytics />,
+          },
+          {
+            path: "staff",
+            element: <Staff />,
+          },
+          {
+            path: "settings",
+            element: <Settings />,
+          },
+        ],
       },
 
       {
@@ -27,7 +58,7 @@ const routes = createBrowserRouter([
       },
       {
         path:"/Regester",
-        element:<RegesterPage/>
+        element:<RegisterPage/>
       },
       {
         path: "*",

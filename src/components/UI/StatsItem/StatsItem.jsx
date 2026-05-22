@@ -2,7 +2,7 @@ export default function StatsItem({ Icon, title, subTitle, indicator, color }) {
   return (
     <article className="dash-wrapper max-md:w-full md:w-[22.5%] max-w-xl">
       <div className="flex justify-between items-center mb-6">
-        <div className="p-2 bg-highlight">{Icon}</div>
+        <div className="p-2 bg-high">{Icon}</div>
         <span className={`font-inter font-medium text-xs ${color}`}>
           {indicator}
         </span>
