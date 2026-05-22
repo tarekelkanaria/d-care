@@ -57,8 +57,8 @@ const routes = createBrowserRouter([
         element: <LoginPage />,
       },
       {
-        path:"/Regester",
-        element:<RegisterPage/>
+        path: "/Register",
+        element: <RegisterPage />,
       },
       {
         path: "*",

@@ -5,7 +5,7 @@ import { useNavigate } from "react-router";
 export default function Login() {
   const navigate = useNavigate();
   function goToRegister() {
-    navigate("/Regester");
+    navigate("/Register");
   }
   return (
     <div className="min-h-screen flex bg-gray-50 font-sans text-gray-800">

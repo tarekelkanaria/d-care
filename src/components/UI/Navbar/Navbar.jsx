@@ -35,7 +35,7 @@ export default function Navbar() {
             </div>
           ) : (
             <ul
-              className={`text-icon ${openMenu ? "flex flex-col absolute top-10.5 right-5 bg-white shadow-md p-5 md:hidden space-y-2 rounded-md" : "hidden md:flex space-x-5"}`}
+              className={`text-icon ${openMenu ? "flex flex-col absolute top-10.5 right-5 bg-white shadow-md p-5 md:hidden space-y-2 rounded-md z-10" : "hidden md:flex space-x-5"}`}
             >
               <li>
                 <a href="#services" className="hover:text-logo">
